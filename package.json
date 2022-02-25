@@ -1,0 +1,14 @@
+{
+  "name": "freeswitch_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "receive.js",
+  "scripts": {
+    "start": "node receive.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.8.0"
+  }
+}

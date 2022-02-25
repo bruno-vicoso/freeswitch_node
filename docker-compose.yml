@@ -1,0 +1,8 @@
+version: '1'
+services:
+  events:
+    container_name: events
+    build:
+      context: .
+    volumes:
+      - .:/src
