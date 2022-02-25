@@ -17,9 +17,9 @@ amqp.connect('amqp://fs:fs@10.29.101.67:5672', function (error0, connection) {
 
         console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", queue);
         channel.consume(queue, function (msg) {
-            var retorno = msg.content.toString()
-            var json = JSON.parse(retorno)
-            console.log(json)
+            // var retorno = msg.content.toString()
+            // var json = JSON.parse(retorno)
+            console.log(msg.content.toString())
 
             // fs.appendFile('test.txt', msg.content.toString(), function (err) {
             //     if (err) throw err;
